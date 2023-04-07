@@ -9,7 +9,7 @@
       // "flutterMode": "profile",
       // "flutterMode": "release",
       "program": "lib/main.dart",
-      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=https://flutter.dev"]
     },
     {
       "name": "Android",
@@ -18,7 +18,7 @@
       "deviceId": "emulator-5554",
       "flutterMode": "debug",
       "program": "lib/main.dart",
-      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=https://flutter.dev"]
     },
     {
       "name": "Chrome",
@@ -27,7 +27,7 @@
       "deviceId": "chrome",
       "flutterMode": "debug",
       "program": "lib/main.dart",
-      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=https://flutter.dev"]
     },
     {
       "name": "iPhone",
@@ -36,14 +36,14 @@
       "deviceId": "iphone",
       "flutterMode": "debug",
       "program": "lib/main.dart",
-      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=https://flutter.dev"]
     }
   ],
   "compounds": [
     {
       "name": "All Devices",
       "configurations": ["Android", "iPhone", "Chrome"],
-      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=https://flutter.dev"]
     }
   ]
 }
