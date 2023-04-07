@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Current Device",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      // "flutterMode": "profile",
+      // "flutterMode": "release",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+    },
+    {
+      "name": "Android",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "emulator-5554",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+    },
+    {
+      "name": "Chrome",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "chrome",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+    },
+    {
+      "name": "iPhone",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "iphone",
+      "flutterMode": "debug",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "All Devices",
+      "configurations": ["Android", "iPhone", "Chrome"],
+      "args": ["--dart-define=WEB_VIEW_BASE_URL=http://192.168.0.3:3000"]
+    }
+  ]
+}
