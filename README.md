@@ -39,3 +39,7 @@ https://flutter-ko.dev/docs/deployment/android
     change application id, package name
 
     a. RUN ./start-build-config
+
+### 6. set version
+
+    a. RUN ./set-version.sh
