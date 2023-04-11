@@ -1,16 +1,41 @@
-# web_view
+# flutter webview app boilerplate
 
-A new Flutter project.
+convert web service to webview app
 
-## Getting Started
+https://flutter-ko.dev/docs/deployment/android
 
-This project is a starting point for a Flutter application.
+### 1. set launcher icon
 
-A few resources to get you started if this is your first Flutter project:
+    a. ADD assets/launcher_icon/launcher_icon.png
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    b. RUN ./set-launcher-icon.sh
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. build app
+
+    a. build-apk (for test)
+
+        1) RUN ./build-apk.prod.sh
+
+    b. build-app-bundle
+
+        1) RUN ./build-app-bundle.prod.sh
+
+### 3. make-keystore
+
+    a. RUN ./set-key-tool.sh
+
+    E: the operation couldn’t be completed. unable to locate a java runtime.
+
+        a. install java (VISIT http://www.java.com)
+
+### 4. start-app-manifest
+
+    change app name
+
+    a. RUN ./start-app-manifest.sh
+
+### 5. start-build-config
+
+    change application id, package name
+
+    a. RUN ./start-build-config
